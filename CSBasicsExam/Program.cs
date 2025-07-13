@@ -60,9 +60,9 @@ namespace CSBasicsExam
             //Console.WriteLine($"Maximum is : {max} at index {maxIndex}");
 
             /// Question 6 ///
-            //Console.Write("Enter your word : ");
-            //string word = Console.ReadLine();
-            //Console.WriteLine($"Word is {isPalindrome(word).ToString()}");
+            Console.Write("Enter your word : ");
+            string word = Console.ReadLine();
+            Console.WriteLine($"Word is {isPalindrome(word).ToString()}");
 
 
             /// Question 7 ///
@@ -253,9 +253,9 @@ namespace CSBasicsExam
         {
             int leftPtr = 0;
             int rightPtr = word.Length - 1;
-            while (leftPtr != rightPtr)
+            while (leftPtr <= rightPtr)
             {
-                if (word[leftPtr].Equals(word[rightPtr]))
+                if (word[leftPtr].ToString().ToLower() != word[rightPtr].ToString().ToLower())
                 {
                     return PalindromeStatus.NotPalindrome;
                 }
