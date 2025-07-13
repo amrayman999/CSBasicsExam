@@ -60,9 +60,9 @@ namespace CSBasicsExam
             //Console.WriteLine($"Maximum is : {max} at index {maxIndex}");
 
             /// Question 6 ///
-            Console.Write("Enter your word : ");
-            string word = Console.ReadLine();
-            Console.WriteLine($"Word is {isPalindrome(word).ToString()}");
+            //Console.Write("Enter your word : ");
+            //string word = Console.ReadLine();
+            //Console.WriteLine($"Word is {isPalindrome(word).ToString()}");
 
 
             /// Question 7 ///
