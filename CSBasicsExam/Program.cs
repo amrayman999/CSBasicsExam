@@ -253,9 +253,9 @@ namespace CSBasicsExam
         {
             int leftPtr = 0;
             int rightPtr = word.Length - 1;
-            while (leftPtr != rightPtr)
+            while (leftPtr <= rightPtr)
             {
-                if (word[leftPtr].Equals(word[rightPtr]))
+                if (word[leftPtr].ToString().ToLower() != word[rightPtr].ToString().ToLower())
                 {
                     return PalindromeStatus.NotPalindrome;
                 }
